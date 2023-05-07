@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Week2_HW1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         try {
