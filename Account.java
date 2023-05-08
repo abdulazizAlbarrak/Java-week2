@@ -31,14 +31,15 @@ public class Account {
         return balance;
     }
     public int debit(int amount){
-        if(balance - amount < 0) {
+        if(balance - amount >= 0) {
             balance = balance - amount;
             return balance;
         }else return balance;
     }
 
     public int transferTo(Account another, int amount){
-        balance = balance - another.credit(amount);
+        if(balance - amount >= 0)
+            balance = balance - another.credit(amount);
         return balance;
     }
 
